@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Anasayfa - {{ block.super }}{% endblock %}
+{% block body %}
+
+    Merhaba  {{ isim }} {{ soyisim }} Burası Anasayfa
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3 col-sm-6" style = "background-color: #5e5e5e; height: 100px">1.ürün</div>
+            <div class = "col-md-3 col-sm-6" style = "background-color: #66512c; height: 100px">2.ürün</div>
+            <div class = "col-md-3 col-sm-6" style = "background-color: #c0a16b; height: 100px ">3.ürün</div>
+            <div class = "col-md-3 col-sm-6" style = "background-color: crimson; height: 100px ">4.ürün</div>
+
+        </div>
+    Hoşgeldiniz {{ request.user.get_full_name }}
+    </div>
+
+{% endblock %}
